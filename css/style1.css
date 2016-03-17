@@ -27,8 +27,7 @@ body a{
 }
 h1,h2,h3,h4,h5,h6{
 	margin:0;
-  font-weight: bold;
-  color: #39e43d;		   
+  color: #fff;		   
 }
 p{
 	margin:0;
@@ -994,9 +993,9 @@ input{
      border-radius: 5px;
 }
 h4.title {
-    font-size: 1.1em;
-    color: #39e43d;
-    font-weight: bold;
+    font-size: 1.5em;
+    color: green;
+   
     margin: 1.5em 0 1em;
     text-transform: uppercase;
 }
@@ -2073,6 +2072,7 @@ h4.modal-title {
     color: #000;
     font-size: 1.006em;
     font-family: Varela Round;
+    text-align: center;
     background-color: #F5F5F5;
 }
 .compose-left ul li a {
@@ -2087,7 +2087,7 @@ h4.modal-title {
 }
 .compose-left span {
     float: right;
-    background-color: #293b8f;
+    background-color: green;
     padding: 3px 10px;
     font-size: .7em;
     border-radius: 4px;
@@ -4344,7 +4344,10 @@ width: 98px
 .padchallenge{
   padding-top: 4em
 }
-#datep{
+.datep{
   margin-top: -50px;
-  float:right;
+  width: 100%;
+  padding-bottom: 30px;
+  
+  margin-left: 66%;
 }
