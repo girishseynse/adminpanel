@@ -13,7 +13,7 @@ ul, ol {margin: 0;}
 p {margin: 0;}
 
 html, body{
-  	font-family: museo;
+  	font-family: Varela Round;
     font-size: 100%;
   	overflow-x: hidden;
 }
@@ -1003,6 +1003,7 @@ h4.title {
 /*--//charts--*/
 .widget-shadow {
     background-color: #fff;
+    border-radius: 8px;
     box-shadow: 0 -1px 3px rgba(0,0,0,.12),0 1px 2px rgba(0,0,0,.24);
 	-webkit-box-shadow: 0 -1px 3px rgba(0,0,0,.12),0 1px 2px rgba(0,0,0,.24);
 	-moz-box-shadow: 0 -1px 3px rgba(0,0,0,.12),0 1px 2px rgba(0,0,0,.24);
@@ -2068,6 +2069,7 @@ h4.modal-title {
 .compose-left ul li.head {
     padding: 0.5em 1.5em;
     border-bottom: 1px solid #DCDCDC;
+    border-radius: 8px;
     color: #000;
     font-size: 1.006em;
     font-family: Varela Round;
@@ -4073,8 +4075,8 @@ transform:scale(1.1);
 }
 .info-box-text {
     display: block;
-    font-size: 16px;
-    font-family: Museo;
+    font-size: 15px;
+    font-family: Varela Round;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -4145,8 +4147,8 @@ color: #00a65a;
 }
 .menu{
   width:80px;
-  border-radius: 5px;
-  font-family: museo;
+  border-radius: 10px;
+  font-family: Varela Round;
 }
 .icon-animated-bell{
   animation:ringing 2s 5 ease 1s;
@@ -4341,4 +4343,8 @@ width: 98px
 }
 .padchallenge{
   padding-top: 4em
+}
+#datep{
+  margin-top: -50px;
+  float:right;
 }
