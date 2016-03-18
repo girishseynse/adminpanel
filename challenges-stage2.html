@@ -40,7 +40,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <link href="css/custom.css" rel="stylesheet">
 <!--//Metis Menu -->
 </head> 
-<body class="cbp-spmenu-push">
+<body class="cbp-spmenu-push" ng-app>
 	<div class="main-content">
 		<!--left-fixed -navigation-->
 			<div class=" sidebar" role="navigation">
@@ -182,24 +182,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
         <!--//footer-->
 	<!-- Classie -->
 		<script src="js/classie.js"></script>
-		<script>
-			var menuLeft = document.getElementById( 'cbp-spmenu-s1' ),
-				showLeftPush = document.getElementById( 'showLeftPush' ),
-				body = document.body;
-				
-			showLeftPush.onclick = function() {
-				classie.toggle( this, 'active' );
-				classie.toggle( body, 'cbp-spmenu-push-toright' );
-				classie.toggle( menuLeft, 'cbp-spmenu-open' );
-				disableOther( 'showLeftPush' );
-			};
-			
-			function disableOther( button ) {
-				if( button !== 'showLeftPush' ) {
-					classie.toggle( showLeftPush, 'disabled' );
-				}
-			}
-		</script>
+		
 		<script>
 			$(document).ready(function(){
 		    $('#myTable').DataTable({

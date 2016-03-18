@@ -5,7 +5,7 @@ License: Creative Commons Attribution 3.0 Unported
 License URL: http://creativecommons.org/licenses/by/3.0/
 -->
 <!DOCTYPE HTML>
-<html>
+<html ng-app>
 <head>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"/>
 <link rel="icon" href="images/Header-logo-.png" />
@@ -40,7 +40,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <link href="css/custom.css" rel="stylesheet">
 <!--//Metis Menu -->
 </head> 
-<body class="cbp-spmenu-push">
+<body class="cbp-spmenu-push" >
 	<div class="main-content">
 		<!--left-fixed -navigation-->
 		<div class=" sidebar" role="navigation">
@@ -205,24 +205,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		
 	<!-- Classie -->
 		<script src="js/classie.js"></script>
-		<script>
-			var menuLeft = document.getElementById( 'cbp-spmenu-s1' ),
-				showLeftPush = document.getElementById( 'showLeftPush' ),
-				body = document.body;
-				
-			showLeftPush.onclick = function() {
-				classie.toggle( this, 'active' );
-				classie.toggle( body, 'cbp-spmenu-push-toright' );
-				classie.toggle( menuLeft, 'cbp-spmenu-open' );
-				disableOther( 'showLeftPush' );
-			};
-			
-			function disableOther( button ) {
-				if( button !== 'showLeftPush' ) {
-					classie.toggle( showLeftPush, 'disabled' );
-				}
-			}
-		</script>
+	
 		<script>
 			$(document).ready(function(){
 		    $('#myTable').DataTable({
