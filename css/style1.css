@@ -4075,6 +4075,7 @@ transform:scale(1.1);
 }
 .info-box-text {
     display: block;
+    text-align: center;
     font-size: 15px;
     font-family: Varela Round;
     white-space: nowrap;
@@ -4086,7 +4087,7 @@ transform:scale(1.1);
   color: #c52f61;
   font-size:20px;
   font-style: bold;
-  padding-left:2em;
+  padding-left:3em;
   position: absolute;
 }
 .stats-widget .text-red{
