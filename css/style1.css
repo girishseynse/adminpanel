@@ -4325,10 +4325,7 @@ width: 98px
     -webkit-transition: all 0.7s ease;
     transition: all 0.7s ease;
 }
-.challenges-widget:hover{
-  -webkit-transform:scale(1.2);
-  transform:scale(1.2);
-}
+
 .challenges-widget.state-mdl {
     margin: 0 1.5%;
 }
@@ -4351,4 +4348,13 @@ width: 98px
   padding-bottom: 30px;
   
   margin-left: 66%;
+}
+.individual{
+        background-color: #197278;
+        color: white;
+}
+.all{
+  border-radius: 10px;
+  width: 68px;
+  height: 35px;
 }

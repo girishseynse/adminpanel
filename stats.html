@@ -265,7 +265,7 @@ License: Creative Commons Attribution 3.0 Unported
 					<div class="clearfix"> </div>
 				</div><!--end charts-->
 				</div><!--end row-->
-					<button class="menu" type="button" class="btn buttn " style="margin:3em 0 0 18em">All</button>
+					<button class="all" type="button" class="btn buttn " style="margin:3em 0 0 18em">All</button>
 					<button class="menu" type="button" class="btn buttn "  style="margin-left:3em">Tag1</button>
 					<button class="menu" type="button" class="btn buttn" style="margin-left:1em">Tag2</button>
 					<button class="menu" type="button" class="btn buttn" style="margin-left:5em">Tag a</button>
@@ -280,41 +280,38 @@ License: Creative Commons Attribution 3.0 Unported
         <!--//footer-->
 	<!-- Classie -->
 		<script src="js/classie.js"></script>
+		<script>
+			
+		</script>
 		
 		<script>
-			$('button').click(function() {
-				  var value = $(this).attr('class');
-				  if (value == "menu") {
-				    $(this).siblings().removeClass("current");
-				    $(this).addClass("current");
-				  }
-					});
-			$('.widget-toolbar a ').click(function(event){
-				 if($(this).find($(".fa")).hasClass('fa-chevron-down'))
-               {
-                  $(this).find($(".fa")).removeClass('fa-chevron-down').addClass('fa-chevron-up');
-               }
-               else if($(this).find($(".fa")).hasClass('fa-chevron-up'))
-                    {                     
-                        $(this).find($(".fa")).removeClass('fa-chevron-up').addClass('fa-chevron-down');    
-                    }    
-			});			
+			//change all button color onclick of 'All' button//
+			$('.all').click(function(){
+				$(".menu").toggleClass('individual');
+				});
+
+			//change individual button color//
+			$('button').click(function(){  
+			  $(this).toggleClass('individual');
+			  });
 		</script>
+
 		<script>
-		$('.firstbox').find('#red').click(function(){
-		  	var d2=$(this).attr('value');
-		 	$(this).parent().parent().find('.percent').html(d2)
-		  
-		});
-		$('.firstbox').find('#yellow').click(function(){
-		  	var d2=$(this).attr('value');
-		 	$(this).parent().parent().find('.percent').html(d2)
-		});
-		$('.firstbox').find('#green').click(function(){
-		  	var d2=$(this).attr('value');
-		 	$(this).parent().parent().find('.percent').html(d2)
-		});	
+			$('.firstbox').find('#red').click(function(){
+			  	var d2=$(this).attr('value');
+			 	$(this).parent().parent().find('.percent').html(d2)
+			  
+			});
+			$('.firstbox').find('#yellow').click(function(){
+			  	var d2=$(this).attr('value');
+			 	$(this).parent().parent().find('.percent').html(d2)
+			});
+			$('.firstbox').find('#green').click(function(){
+			  	var d2=$(this).attr('value');
+			 	$(this).parent().parent().find('.percent').html(d2)
+			});	
 		</script>
+
 		<script>
 			var barChartData = {
 				labels : ["No. of sign-ups","Daily active users","Average time active","Total time run","Total distance covered","10K activated"],
@@ -351,14 +348,6 @@ License: Creative Commons Attribution 3.0 Unported
             
             });
         </script>
-
-		
-		<style>
-			.current {
-	  			background-color: #3a87ad;
-	  			color: white;
-			}
-		</style>
 	<!--scrolling js-->
 	<script src="js/bootstrap-datepicker.js"></script>
 	<script src="js/jquery.nicescroll.js"></script>
